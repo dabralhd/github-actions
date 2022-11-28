@@ -42,8 +42,8 @@ jobs:
       day: monday
    
     steps: |
-      - needs: build
-      - run: |
+      needs: build
+      run: |
         echo running on operating system $os-name on $day
     
       
