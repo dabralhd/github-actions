@@ -34,3 +34,19 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+  package:
+    runs-on: ubuntu-latest
+    env:
+      os-name: ubuntu
+   
+    steps: |
+      - needs: build
+      - run: |
+        echo running on operating system $os-name
+    
+      
+    
+    
+
+    
