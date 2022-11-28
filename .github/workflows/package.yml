@@ -37,13 +37,14 @@ jobs:
           
   package:
     runs-on: ubuntu-latest
+    needs: build
     env:
       os-name: ubuntu
       day: monday
    
-    steps: |
-      needs: build
-      run: |
+    steps:   
+    - name: packaging the deliverable
+    - run: |
         echo running on operating system $os-name on $day
     
       
