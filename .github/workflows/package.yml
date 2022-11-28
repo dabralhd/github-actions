@@ -44,7 +44,7 @@ jobs:
    
     steps:   
     - name: packaging the deliverable
-    - run: |
+      run: |
         echo running on operating system $os-name on $day
     
       
