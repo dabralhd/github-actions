@@ -39,11 +39,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
       os-name: ubuntu
+      day: monday
    
     steps: |
       - needs: build
       - run: |
-        echo running on operating system $os-name
+        echo running on operating system $os-name on $day
     
       
     
